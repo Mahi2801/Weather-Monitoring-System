@@ -1,0 +1,52 @@
+<head>
+  <link rel="stylesheet" href="./weather.css">
+  <script src="./weather.js"></script>
+</head>
+<div class="weather-app" id="bgImage">
+  <div class="container">
+    <h3 class="brand">Weather Condition</h3>
+    <div>
+     <h1 class="temp" id="degreesID"></h1>
+     <div class="city-time" id="cityNames">
+       <h1 class="name" id="cityName"></h1>
+       <small>
+         <span class="date" id="dateTime"></span>
+       </small>
+     </div>
+     <div class="weather">
+       <img
+       src="https://cdn-icons-png.flaticon.com/512/4735/4735121.png"
+       class="icon"
+       alt="icon"
+       width="50"
+       height="50"/>
+       </div>
+       <span class="condition" id="condition"></span>
+    </div>
+  </div>
+</div>
+<div class="panel">
+  <form id="locationInput">
+    <input
+     type="text" id="valueID"
+     class="search" onkeyup="searchVal()"
+     placeholder="search Location...">
+  </form>
+  <ul class="cities" id="citiesList"></ul>
+    <ul class="details">
+      <h4>weather Details</h4>
+      <li>
+        <span>Pressure</span>
+        <span class="cloud" id="Pressure"></span>
+        </li>
+        <li>
+          <span>Humidity</span>
+          <span class="Humidity" id="Humidity"></span>
+        </li>
+        <li>
+          <span>Wind</span>
+          <span class="Wind" id="Wind"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
